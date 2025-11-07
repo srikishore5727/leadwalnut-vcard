@@ -24,7 +24,8 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#F8FFF9]">
+    // <div className="min-h-screen bg-[#F8FFF9]">
+    <div>
       {/* Mobile viewport container - iPhone 13/14 Pro dimensions */}
       <main 
         className="mx-auto bg-white shadow-2xl min-h-screen overflow-y-auto"
