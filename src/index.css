@@ -427,9 +427,27 @@
   }
 }
 
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+iframe {
+  display: block;
+  border: none;
+  width: 100%;
+  height: 100vh;
+  background-color: transparent;
+}
+
+/* Fix for iOS/Webflow iframe clipping */
 body {
   padding-bottom: env(safe-area-inset-bottom);
+  overscroll-behavior: none;
 }
+
 
 
 

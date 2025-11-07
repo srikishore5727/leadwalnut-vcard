@@ -15,23 +15,26 @@ export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationPro
   ];
 
   return (
-    <nav 
-      className="fixed bottom-0 bg-white shadow-lg"
-      style={{
-        width: '375px',
-        maxWidth: '100%',
-        left:'50%',
-        transform: 'translateX(-50%)',
-        margin: 'auto',
-        boxShadow: '0 -4px 20px rgba(0, 0, 0, 0.08)',
-        borderTopLeftRadius: '16px',
-        borderTopRightRadius: '16px',
-        position: 'fixed',
-        bottom: 0,
-        paddingBottom: 'env(safe-area-inset-bottom)',
-        zIndex:9999, // ✅ for iPhones with notches
-      }}
-    >
+    <nav
+  className="fixed inset-x-0 bottom-0 bg-white shadow-lg z-50"
+  style={{
+    position: 'fixed',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    margin: '0 auto',
+    width: '100%',
+    maxWidth: '375px',
+    borderTopLeftRadius: '16px',
+    borderTopRightRadius: '16px',
+    boxShadow: '0 -4px 20px rgba(0, 0, 0, 0.08)',
+    paddingBottom: 'env(safe-area-inset-bottom)',
+    backgroundColor: '#fff',
+    zIndex: 9999,
+    transform: 'translateZ(0)', // ✅ prevents "disappearing" on scroll inside iframe
+  }}
+>
+
       <div className="max-w-md mx-auto h-16 px-1 flex items-center justify-around">
         {tabs.map((tab) => {
           const Icon = tab.icon;
