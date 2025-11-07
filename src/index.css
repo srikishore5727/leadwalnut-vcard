@@ -423,9 +423,14 @@
   html, body {
     min-height: 100dvh;
     overflow-x: hidden;
-    overscroll-behavior-y: none;
+    background-color: #ffffff;
   }
 }
+
+body {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
 
 
 @layer utilities {

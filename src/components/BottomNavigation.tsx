@@ -16,7 +16,7 @@ export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationPro
 
   return (
     <nav 
-      className="fixed bottom-0 bg-white shadow-lg z-50"
+      className="fixed bottom-0 bg-white shadow-lg"
       style={{
         width: '375px',
         maxWidth: '100%',
@@ -28,7 +28,8 @@ export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationPro
         borderTopRightRadius: '16px',
         position: 'fixed',
         bottom: 0,
-        paddingBottom: 'env(safe-area-inset-bottom)', // ✅ for iPhones with notches
+        paddingBottom: 'env(safe-area-inset-bottom)',
+        zIndex:9999, // ✅ for iPhones with notches
       }}
     >
       <div className="max-w-md mx-auto h-16 px-1 flex items-center justify-around">
