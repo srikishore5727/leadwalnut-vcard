@@ -17,7 +17,6 @@ export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationPro
   return (
     <nav
     style={{
-      border:"1px solid red",
       position: 'fixed',
       bottom: 0,
       left: 0,
