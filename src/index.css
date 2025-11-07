@@ -419,6 +419,15 @@
   }
 }
 
+@supports (height: 100dvh) {
+  html, body {
+    min-height: 100dvh;
+    overflow-x: hidden;
+    overscroll-behavior-y: none;
+  }
+}
+
+
 @layer utilities {
   .pointer-events-none {
     pointer-events: none;

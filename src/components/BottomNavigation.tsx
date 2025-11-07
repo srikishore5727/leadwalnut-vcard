@@ -16,14 +16,19 @@ export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationPro
 
   return (
     <nav 
-      className="fixed bottom-0 left-0 right-0 bg-white shadow-lg z-50"
+      className="fixed bottom-0 bg-white shadow-lg z-50"
       style={{
         width: '375px',
-        maxWidth: '100vw',
-        margin:'auto',
+        maxWidth: '100%',
+        left:'50%',
+        transform: 'translateX(-50%)',
+        margin: 'auto',
         boxShadow: '0 -4px 20px rgba(0, 0, 0, 0.08)',
         borderTopLeftRadius: '16px',
         borderTopRightRadius: '16px',
+        position: 'fixed',
+        bottom: 0,
+        paddingBottom: 'env(safe-area-inset-bottom)', // ✅ for iPhones with notches
       }}
     >
       <div className="max-w-md mx-auto h-16 px-1 flex items-center justify-around">
