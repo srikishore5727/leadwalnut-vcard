@@ -16,22 +16,19 @@ export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationPro
 
   return (
     <nav
-  className="fixed inset-x-0 bottom-0 bg-white shadow-lg z-50"
-  style={{
-    position: 'fixed',
-    bottom: 0,
-    left: 0,
-    right: 0,
-    margin: '0 auto',
-    width: '100%',
-    maxWidth: '375px',
-    borderTopLeftRadius: '16px',
-    borderTopRightRadius: '16px',
-    boxShadow: '0 -4px 20px rgba(0, 0, 0, 0.08)',
-    paddingBottom: 'env(safe-area-inset-bottom)',
-    backgroundColor: '#fff',
-    zIndex: 9999,
-    transform: 'translateZ(0)', // ✅ prevents "disappearing" on scroll inside iframe
+    style={{
+      position: 'fixed',
+      bottom: 0,
+      left: 0,
+      right: 0,
+      margin: '0 auto',
+      width: '100%',
+      maxWidth: '375px',
+      boxShadow: '0 -4px 20px rgba(0, 0, 0, 0.08)',
+      paddingBottom: 'env(safe-area-inset-bottom)',
+      backgroundColor: '#fff',
+      zIndex: 9999,
+      transform: 'translateZ(0)', // ✅ prevents "disappearing" on scroll inside iframe
   }}
 >
 
@@ -54,7 +51,7 @@ export function BottomNavigation({ activeTab, onTabChange }: BottomNavigationPro
                   transition={{ type: "spring", stiffness: 300, damping: 30 }}
                 >
                   <div 
-                    className="w-12 h-12 rounded-xl"
+                    className="w-[82px] h-12 rounded-xl"
                     style={{ backgroundColor: 'rgba(46, 125, 50, 0.1)' }}
                   />
                 </motion.div>
