@@ -21,12 +21,12 @@ const trustedBrands = [
   { 
     name: 'Splashtop', 
     type: 'logo' as const,
-    logoUrl: 'https://old.roi4cio.com/fileadmin/user_upload/splashtop_logo.png'
+    logoUrl: 'https://cdn.prod.website-files.com/64c7db62bef432a73deb39fa/680f632b8a1e8ac769319cf3_Splashtop%20(1).webp'
   },
   { 
     name: '8X8', 
     type: 'logo' as const,
-    logoUrl: 'https://assets.techrepublic.com/uploads/2024/08/8x8.jpg'
+    logoUrl: 'https://cdn.prod.website-files.com/64c7db62bef432a73deb39fa/6512860bd3c2151697918cfd_8x8_logo_2016.svg.webp'
   },
   { 
     name: 'ITT Digital', 
@@ -36,7 +36,7 @@ const trustedBrands = [
   { 
     name: 'Maarga', 
     type: 'logo' as const,
-    logoUrl: 'https://www.maargasystems.com/wp-content/uploads/2024/04/logo.png'
+    logoUrl: 'https://cdn.prod.website-files.com/64c7db62bef432a73deb39fa/6512860ac50e78dccac02d22_maarga-logo-reg-sm-2.webp'
   },
   { 
     name: 'Connect', 
@@ -46,7 +46,7 @@ const trustedBrands = [
   { 
     name: 'Flipkart', 
     type: 'logo' as const,
-    logoUrl: 'https://deep-image.ai/blog/content/images/2023/01/Flipkart-logo.png'
+    logoUrl: 'https://cdn.prod.website-files.com/64c7db62bef432a73deb39fa/64f5d61db2064353a59f498c_flipkart.webp'
   },
   { 
     name: 'APA Engineering', 
@@ -142,45 +142,34 @@ export function HomeTab({ onNavigate }: HomeTabProps) {
       </motion.div>
 
       {/* Trusted By Industry Leaders Section */}
-      <motion.div 
-        className="px-4 pt-2 pb-6"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.6, duration: 0.6 }}
-      >
-        <h2 className="font-inter text-[16px] font-semibold text-[#2E7D32] mb-4">
-          Trusted By Industry Leaders
-        </h2>
-        
-        {/* Horizontal scrollable logo chips */}
-        <div className="overflow-x-auto pb-2">
-          <div className="flex flex-wrap gap-2 justify-center">
-            {trustedBrands.map((brand, index) => (
-              <motion.div
-                key={index}
-                className="bg-white rounded-full px-4 py-2 shadow-sm border border-[#E0E0E0] whitespace-nowrap flex items-center justify-center min-h-[36px]"
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.7 + (index * 0.04), duration: 0.4 }}
-              >
-                {brand.name === 'Fortinet' ? (
-                  <img 
-                    src={brand.logoUrl} 
-                    alt={`${brand.name} logo`}
-                    className="h-4 w-auto object-contain max-w-[100px]"
-                  />
-                ) : (
-                  <ImageWithFallback
-                    src={brand.logoUrl}
-                    alt={`${brand.name} logo`}
-                    className="h-5 w-auto object-contain max-w-[100px]"
-                  />
-                )}
-              </motion.div>
-            ))}
-          </div>
+      {/* Trusted By Industry Leaders Section */}
+<div className="px-4 pt-2 pb-6">
+  <h2 className="font-inter text-[16px] font-semibold text-[#2E7D32] mb-4 text-center">
+    Trusted By Industry Leaders
+  </h2>
+
+  <div className="relative overflow-hidden">
+    {/* Scroll container */}
+    <div className="flex animate-marquee-smooth gap-4 w-max">
+      {[...trustedBrands, ...trustedBrands].map((brand, index) => (
+        <div
+          key={index}
+          className="bg-white rounded-full px-6 py-3 shadow-sm border border-[#E0E0E0] flex items-center justify-center min-h-[48px] min-w-[140px]"
+        >
+          <img
+            src={brand.logoUrl}
+            alt={`${brand.name} logo`}
+            className="h-5 w-auto object-contain max-w-[100px]"
+          />
         </div>
-      </motion.div>
+      ))}
+    </div>
+
+    {/* Optional gradient fade edges */}
+    <div className="pointer-events-none absolute top-0 left-0 w-12 h-full bg-gradient-to-r from-white to-transparent"></div>
+    <div className="pointer-events-none absolute top-0 right-0 w-12 h-full bg-gradient-to-l from-white to-transparent"></div>
+  </div>
+</div>
 
       {/* Reviews & Ratings Section */}
       <motion.div 

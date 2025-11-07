@@ -17,42 +17,42 @@ const testimonials: Testimonial[] = [
     author: "Balakrishnan Kavikkal",
     title: "Co-Founder & CEO",
     company: "Autonom8 Inc.",
-    imageUrl: "https://images.unsplash.com/photo-1758599543154-76ec1c4257df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzcyUyMG1hbiUyMGV4ZWN1dGl2ZSUyMHBvcnRyYWl0fGVufDF8fHx8MTc2MjQwNjcyNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    imageUrl: "https://cdn.prod.website-files.com/64d3611234cca03f258c29ec/6502e044ee7ef498f986c34a_BalaKrishnan.webp"
   },
   {
     quote: "It was a breeze working with Ajay and his team to transform my website from just an e-business card to a 360-degree digital presence. All the finer details were dealt with care and the quality is top-notch. The main thing I liked is the approach to ensuring the online version adequately reflects the work being done. My students are very happy and I wish to see increased traffic to the website in the future.",
     author: "Mahesh Panchagnula",
     title: "Dean & Board Member",
     company: "IIT Madras",
-    imageUrl: "https://images.unsplash.com/photo-1758685734511-4f49ce9a382b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBhY2FkZW1pYyUyMHByb2Zlc3NvciUyMHBvcnRyYWl0fGVufDF8fHx8MTc2MjQwNjUzMnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    imageUrl: "https://cdn.prod.website-files.com/64d3611234cca03f258c29ec/6502de3eca9c356cb65dc4a3_Mahesh.webp"
   },
   {
     quote: "Within 3-4 months, LeadWalnut has been able to generate quality meetings with our target accounts. Their website revamp & e-mail campaigns have been exceptional in reaching out to prospective customers as well as getting our company name out. We have enjoyed working with Ajay & his team. I clearly see business growing in the near future.",
     author: "Terry Dixon",
     title: "Sales Manager",
     company: "V-J Electronic",
-    imageUrl: "https://images.unsplash.com/photo-1701463387028-3947648f1337?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBidXNpbmVzc21hbiUyMENFTyUyMGhlYWRzaG90fGVufDF8fHx8MTc2MjQwNjcyNHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    imageUrl: "https://cdn.prod.website-files.com/64d3611234cca03f258c29ec/6502ddcb2c472930322eb6fa_Terry.webp"
   },
   {
     quote: "What attracted me to LeadWalnut was their consultative approach to lead generation & digital marketing. We rely heavily on conferences around the world to build the sales pipeline. LeadWalnut's diligent & smart campaigning through e-mail and LinkedIn helped us to get value from every event in which we participated. Ajay & team: Thank you so much!",
     author: "Siva Vajjhala",
     title: "Co-Founder & CEO",
     company: "Tech4TH Solutions",
-    imageUrl: "https://images.unsplash.com/photo-1758518727888-ffa196002e59?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGV4ZWN1dGl2ZSUyMG1hbmFnZXIlMjBwb3J0cmFpdHxlbnwxfHx8fDE3NjI0MDY3MjV8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    imageUrl: "https://cdn.prod.website-files.com/64d3611234cca03f258c29ec/6502dc5e20fa45a7b23dadc3_Siva.webp"
   },
   {
     quote: "Ajay. Thank you and your team for a focused lead generation campaign. It's given 3x increase in qualified leads and Sales is delighted. Also getting us on Google ranking position ONE for our target keywords is great stuff. Keep it going...",
     author: "Venkat Nagaswamy",
     title: "CEO",
     company: "MarianaIQ",
-    imageUrl: "https://images.unsplash.com/photo-1758598497528-d8d9b3f22894?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0ZWNoJTIwZW50cmVwcmVuZXVyJTIwaGVhZHNob3R8ZW58MXx8fHwxNzYyNDA0ODI2fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    imageUrl: "https://cdn.prod.website-files.com/64d3611234cca03f258c29ec/65028ced202da9cf0aa32667_venkat.webp"
   },
   {
     quote: "To generate leads for a startup in the aviation sector is not easy. We threw the challenge at LeadWalnut and results far exceeded expectations. Uma Shankar, Sr. Demand Analyst from LeadWalnut owned the project and applied innovative communication to get us meetings with major airlines.",
     author: "John Whyte",
     title: "Sales Director, US Region",
     company: "TPF Software",
-    imageUrl: "https://images.unsplash.com/photo-1584940120505-117038d90b05?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzZW5pb3IlMjBidXNpbmVzcyUyMHByb2Zlc3Npb25hbCUyMHBvcnRyYWl0fGVufDF8fHx8MTc2MjQwNjcyNnww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    imageUrl: "https://cdn.prod.website-files.com/64c7db62bef432a73deb39fa/690e39edb16b53c8267b774d_John%20Whyte.webp"
   }
 ];
 

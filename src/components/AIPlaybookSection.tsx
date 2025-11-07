@@ -58,7 +58,7 @@ export function AIPlaybookSection() {
         {/* Book Cover Image */}
         <div className="mb-4 relative">
           <motion.div
-            className="rounded-[16px] overflow-hidden shadow-lg mx-auto"
+            className="overflow-hidden shadow-lg mx-auto"
             style={{ 
               maxWidth: '200px',
               boxShadow: '0 6px 20px rgba(0, 74, 61, 0.2)'
@@ -67,7 +67,7 @@ export function AIPlaybookSection() {
             transition={{ duration: 0.3 }}
           >
             <ImageWithFallback
-              src="https://cdn.prod.website-files.com/64c7db62bef432a73deb39fa/68f0b290d709a3c1aeacfa3a_b2b-seo-cmo-report.webp"
+              src="https://cdn.prod.website-files.com/64c7db62bef432a73deb39fa/68ef5a0aadb9363abb35949d_b2b-seo-report-book.webp"
               alt="AI SEO Playbook Cover"
               className="w-full h-auto object-cover"
             />

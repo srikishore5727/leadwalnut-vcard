@@ -133,6 +133,23 @@
   }
 }
 
+@keyframes scroll-smooth {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.animate-scroll-smooth {
+  animation: scroll-smooth 15s linear infinite;
+  display: flex;
+  width: max-content;
+  will-change: transform;
+}
+
+
 /**
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
  */
