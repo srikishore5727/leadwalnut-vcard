@@ -74,7 +74,7 @@ export function AISystemsTab() {
   const shareData = {
     title: 'LeadWalnut - Digital Growth Partner',
     text: 'Connect with LeadWalnut for your digital growth needs',
-    url: 'https://leadwalnut-vcard.vercel.app',
+    url: 'https://leadwalnut.com/digital-vcard',
   };
 
   // First, check if the Web Share API is supported by the browser
