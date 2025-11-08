@@ -62,46 +62,25 @@ interface ClientTestimonial {
 
 const clientTestimonials: ClientTestimonial[] = [
   {
+    quote: "I have worked with many SEO agencies in the past but LeadWalnut stands out in terms of SEO expertise, market research, commitment, responsiveness, project management, and strict adherence to schedule.",
+    author: "Kent Yunk",
+    title: "SEO Director",
+    company: "Fortinet",
+    imageUrl: "https://cdn.prod.website-files.com/64c7db62bef432a73deb39fa/68da471eb58122d5ce0bed70_Kent%20Yunk.webp"
+  },
+  {
+    quote: "This team didn't feel like another agency but like another internal team that truly cared about our needs and objectives. It was as if our goals were just as important to them as us, which is rare to find.",
+    author: "Mimi Chaib",
+    title: "Director of Web Marketing",
+    company: "Consensus Cloud Solutions (eFax)",
+    imageUrl: "https://cdn.prod.website-files.com/64c7db62bef432a73deb39fa/690ecaf8988f8da745a7d5cd_Mimi%20Chaib.webp"
+  },
+   {
     quote: "Lead generation for a startup is never easy. I have been working with Nattu at LeadWalnut for the past year. They definitely rank amongst the best I have seen in the business. Got us quality meetings within 2 months and opened doors with big businesses. The secret to their success is a clear strategy, persistence & leadership attention. Seems obvious but rare to find.",
     author: "Balakrishnan Kavikkal",
     title: "Co-Founder & CEO",
     company: "Autonom8 Inc.",
     imageUrl: "https://cdn.prod.website-files.com/64d3611234cca03f258c29ec/6502e044ee7ef498f986c34a_BalaKrishnan.webp"
-  },
-  {
-    quote: "It was a breeze working with Ajay and his team to transform my website from just an e-business card to a 360-degree digital presence. All the finer details were dealt with care and the quality is top-notch. The main thing I liked is the approach to ensuring the online version adequately reflects the work being done. My students are very happy and I wish to see increased traffic to the website in the future.",
-    author: "Mahesh Panchagnula",
-    title: "Dean & Board Member",
-    company: "IIT Madras",
-    imageUrl: "https://cdn.prod.website-files.com/64d3611234cca03f258c29ec/6502de3eca9c356cb65dc4a3_Mahesh.webp"
-  },
-  {
-    quote: "Within 3-4 months, LeadWalnut has been able to generate quality meetings with our target accounts. Their website revamp & e-mail campaigns have been exceptional in reaching out to prospective customers as well as getting our company name out. We have enjoyed working with Ajay & his team. I clearly see business growing in the near future.",
-    author: "Terry Dixon",
-    title: "Sales Manager",
-    company: "V-J Electronic",
-    imageUrl: "https://cdn.prod.website-files.com/64d3611234cca03f258c29ec/6502ddcb2c472930322eb6fa_Terry.webp"
-  },
-  {
-    quote: "What attracted me to LeadWalnut was their consultative approach to lead generation & digital marketing. We rely heavily on conferences around the world to build the sales pipeline. LeadWalnut's diligent & smart campaigning through e-mail and LinkedIn helped us to get value from every event in which we participated. Ajay & team: Thank you so much!",
-    author: "Siva Vajjhala",
-    title: "Co-Founder & CEO",
-    company: "Tech4TH Solutions",
-    imageUrl: "https://cdn.prod.website-files.com/64d3611234cca03f258c29ec/6502dc5e20fa45a7b23dadc3_Siva.webp"
-  },
-  {
-    quote: "Ajay. Thank you and your team for a focused lead generation campaign. It's given 3x increase in qualified leads and Sales is delighted. Also getting us on Google ranking position ONE for our target keywords is great stuff. Keep it going...",
-    author: "Venkat Nagaswamy",
-    title: "CEO",
-    company: "MarianaIQ",
-    imageUrl: "https://cdn.prod.website-files.com/64d3611234cca03f258c29ec/65028ced202da9cf0aa32667_venkat.webp"
-  },
-  {
-    quote: "To generate leads for a startup in the aviation sector is not easy. We threw the challenge at LeadWalnut and results far exceeded expectations. Uma Shankar, Sr. Demand Analyst from LeadWalnut owned the project and applied innovative communication to get us meetings with major airlines.",
-    author: "John Whyte",
-    title: "Sales Director, US Region",
-    company: "TPF Software",
-    imageUrl: "https://cdn.prod.website-files.com/64c7db62bef432a73deb39fa/690e39edb16b53c8267b774d_John%20Whyte.webp"
   }
 ];
 

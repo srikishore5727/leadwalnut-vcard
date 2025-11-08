@@ -50,25 +50,52 @@ export function AISystemsTab() {
     window.open('https://wa.me/919741497123', '_blank');
   };
 
-  const handleSharePage = async () => {
-    const shareData = {
-      title: 'LeadWalnut - Digital Growth Partner',
-      text: 'Connect with LeadWalnut for your digital growth needs',
-      url: window.location.href
-    };
+  // const handleSharePage = async () => {
+  //   const shareData = {
+  //     title: 'LeadWalnut - Digital Growth Partner',
+  //     text: 'Connect with LeadWalnut for your digital growth needs',
+  //     url: window.location.href
+  //   };
 
-    try {
-      if (navigator.share) {
-        await navigator.share(shareData);
-      } else {
-        // Fallback: copy to clipboard
-        await navigator.clipboard.writeText(window.location.href);
-        alert('Link copied to clipboard!');
-      }
-    } catch (err) {
-      console.error('Error sharing:', err);
-    }
+  //   try {
+  //     if (navigator.share) {
+  //       await navigator.share(shareData);
+  //     } else {
+  //       // Fallback: copy to clipboard
+  //       await navigator.clipboard.writeText(window.location.href);
+  //       alert('Link copied to clipboard!');
+  //     }
+  //   } catch (err) {
+  //     console.error('Error sharing:', err);
+  //   }
+  // };
+
+  const handleSharePage = async () => {
+  const shareData = {
+    title: 'LeadWalnut - Digital Growth Partner',
+    text: 'Connect with LeadWalnut for your digital growth needs',
+    url: 'https://leadwalnut-vcard.vercel.app', // Use your canonical link instead of window.location.href
   };
+
+  try {
+    // Detect if inside an iframe
+    const isInIframe = window.self !== window.top;
+
+    // ✅ Case 1: Works on direct Vercel link (top-level page)
+    if (navigator.share && !isInIframe) {
+      await navigator.share(shareData);
+      return;
+    }
+
+    // ✅ Case 2: Works inside Webflow iframe or non-supporting devices
+    await navigator.clipboard.writeText(shareData.url);
+    alert('🔗 Link copied to clipboard!');
+  } catch (err) {
+    console.error('Share failed:', err);
+    alert('Unable to share automatically. Link copied instead.');
+  }
+};
+
 
   const handleSaveContact = () => {
     const vCardData = `BEGIN:VCARD
