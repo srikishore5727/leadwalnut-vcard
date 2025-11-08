@@ -74,25 +74,29 @@ export function AISystemsTab() {
   const shareData = {
     title: 'LeadWalnut - Digital Growth Partner',
     text: 'Connect with LeadWalnut for your digital growth needs',
-    url: 'https://leadwalnut-vcard.vercel.app', // Use your canonical link instead of window.location.href
+    url: 'https://leadwalnut-vcard.vercel.app',
   };
 
-  try {
-    // Detect if inside an iframe
-    const isInIframe = window.self !== window.top;
-
-    // ✅ Case 1: Works on direct Vercel link (top-level page)
-    if (navigator.share && !isInIframe) {
+  // First, check if the Web Share API is supported by the browser
+  if (navigator.share) {
+    try {
+      // ✅ CORRECT: Always attempt to use the native share functionality.
+      // The browser will use the permissions from the iframe's "allow" attribute.
       await navigator.share(shareData);
-      return;
+    } catch (err) {
+      // This catch block will run if the user closes the share dialog
+      // or if another sharing error occurs. We can safely ignore it.
+      console.error('Web Share API failed:', err);
     }
-
-    // ✅ Case 2: Works inside Webflow iframe or non-supporting devices
-    await navigator.clipboard.writeText(shareData.url);
-    alert('🔗 Link copied to clipboard!');
-  } catch (err) {
-    console.error('Share failed:', err);
-    alert('Unable to share automatically. Link copied instead.');
+  } else {
+    // Fallback for browsers that do not support the Web Share API
+    try {
+      await navigator.clipboard.writeText(shareData.url);
+      alert('Sharing not supported. Link copied to clipboard!');
+    } catch (err) {
+      console.error('Fallback to clipboard failed:', err);
+      alert('Error: Could not share or copy the link.');
+    }
   }
 };
 
