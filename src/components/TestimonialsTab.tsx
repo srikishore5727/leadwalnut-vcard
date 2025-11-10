@@ -199,10 +199,6 @@ export function TestimonialsTab() {
                 </div>
               </div>
 
-              {/* Growth indicator */}
-              <div className="mt-3 flex items-center justify-center">
-                <TrendingUp className="w-4 h-4 text-[#4CAF50]" />
-              </div>
             </motion.div>
           ))}
         </div>

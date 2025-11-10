@@ -43,7 +43,7 @@ const whyChooseUs = [
 
 export function AISystemsTab() {
   const handleLetsTalk = () => {
-    window.location.href = 'tel:+919741497123';
+    window.location.href = 'https://calendly.com/ajay-lw/30min','_blank';
   };
 
   const handleWhatsApp = () => {
