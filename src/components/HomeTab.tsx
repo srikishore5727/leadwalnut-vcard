@@ -92,7 +92,7 @@ export function HomeTab({ onNavigate }: HomeTabProps) {
     },
     {
       icon: <Globe className="w-6 h-6" />,
-      title: "YouTube & Reddit Traffic Optimization"
+      title: "YouTube & Reddit Visibility Optimization"
     },
     {
       icon: <Users className="w-6 h-6" />,
@@ -141,7 +141,6 @@ export function HomeTab({ onNavigate }: HomeTabProps) {
         </div>
       </motion.div>
 
-      {/* Trusted By Industry Leaders Section */}
       {/* Trusted By Industry Leaders Section */}
 <div className="px-4 pt-2 pb-6">
   <h2 className="font-inter text-[16px] font-semibold text-[#2E7D32] mb-4 text-center">
